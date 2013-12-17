@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+body {
+	color: #393939;
+	font-family: 'Open Sans';
+    
+}
+/* Theme Custom*/
+
+.w_bold_text {
+	color:#FC0;
+	font-weight:bold;
+}
+body {
+	background:#CCC;
+}
+
+.formFieldWrap span {
+	color:red;
+}
+
+
+
+.loader {
+	text-align:center;
+	background:url(../images/AjaxLoader.gif) no-repeat center;
+	min-height:30px;
+	display:none;
+}
+
+#error {
+	display:none;
+}
+
+.error_list {
+	list-style:none;
+	background-color: rgba(219, 84, 84, 0.5);
+    border-radius: 5px;
+}
+
+
+.error_list ul,li {
+    color: #CC0000;
+    list-style: none outside none;
+	padding-left:5px;
+	padding-bottom:2px;
+}
+
+.alert {
+-webkit-border-radius:0;
+-moz-border-radius:0;
+border-radius:0;
+}
+.alert-error{color:#b94a48;background-color:#f2dede;border-color:#eed3d7}
+
+select {
+	width:100%;
+	max-width:750px;
+}
+
+#msgtoshow {
+	width:100%;
+	height:100%;
+	margin:10px;
+	padding:25px;
+	min-height:200px;
+	display:none
+}
+
+
+.apple{
+	background: #f5f5f5;
+	border: 1px solid #FFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-bottom:3px;
+}
+
+
+.panel-time {
+	clear:both;
+	content:" ";
+    display:block;
+	margin:0 5px 0 5px;
+}
+.panel-control {
+	text-align:center;
+	margin:3px;
+	
+}
+.panel-body-left {
+	float:left;
+	width:20%;
+}
+.panel-body-right {
+	margin-left:20%;
+}
+.panel-seperate {
+	line-height:.3em;
+	margin:3px;
+}
+.btn-accept {
+	border-color:#00F;
+}
+.btn-decline {
+}
+.btn-view {
+}

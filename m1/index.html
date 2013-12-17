@@ -1,0 +1,351 @@
+<!DOCTYPE html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--Declare page as mobile friendly --> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Declare page as iDevice WebApp friendly -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png"> 
+<!-- iPhone 3, 3Gs -->
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" 			media="screen and (max-device-width: 320px)" /> 
+<!-- iPhone 4 -->
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen%402x.png" 		media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<!-- iPhone 5 -->
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen%403x.png" />
+
+<!-- Page Title -->
+<title>Epsilon Elements | Mobile Framework Starter</title>
+
+<!-- Stylesheet Load -->
+<link href="styles/style.css"				rel="stylesheet" type="text/css">
+<link href="styles/framework-style.css" 	rel="stylesheet" type="text/css">
+<link href="styles/framework.css" 			rel="stylesheet" type="text/css">
+<link href="styles/coach.css"				rel="stylesheet" type="text/css">
+<link href="styles/bxslider.css"			rel="stylesheet" type="text/css">
+<link href="styles/swipebox.css"			rel="stylesheet" type="text/css">
+<link href="styles/icons.css"				rel="stylesheet" type="text/css">
+<link href="styles/retina.css" 				rel="stylesheet" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+
+
+<!--Page Scripts Load -->
+<script src="scripts/jquery.min.js"		 type="text/javascript"></script>	
+<script src="scripts/snap.js"			 type="text/javascript"></script>
+<script src="scripts/hammer.js"			 type="text/javascript"></script>	
+<script src="scripts/jquery-ui-min.js"   type="text/javascript"></script>
+<script src="scripts/subscribe.js"		 type="text/javascript"></script>
+<script src="scripts/contact.js"		 type="text/javascript"></script>
+<script src="scripts/jquery.swipebox.js" type="text/javascript"></script>
+<script src="scripts/bxslider.js"		 type="text/javascript"></script>
+<script src="scripts/colorbox.js"		 type="text/javascript"></script>
+<script src="scripts/retina.js"			 type="text/javascript"></script>
+<script src="scripts/custom.js"			 type="text/javascript"></script>
+<script src="scripts/framework.js"		 type="text/javascript"></script>
+
+</head>
+<body>
+
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+<div class="page-coach">
+	<div class="portrait-coach">
+        <span  style="top:40px; left:28px;" class="coach-arrow arrow1">
+        	<h3 style="padding-top:35px; padding-left:100px; margin-bottom:-5px;">TAP THE ICON!</h3>
+            <p style="padding-top:0px; padding-left:100px;">TO OPEN NAVIGATION!</p>
+        </span>
+        
+        <span  style="top:170px; left:90px; width:320px;" class="coach-arrow arrow2">
+        	<h3 style="padding-top:45px; padding-right:55px;  margin-bottom:-5px;">SWIPE THE SLIDER</h3>
+            <p style="padding-top:00px; padding-right:55px;">SWIPE LEFT OR RIGHT!</p>
+        </span>
+        
+        <span  style="top:310px; left:20px;" class="coach-arrow arrow9">
+        	<h3 style="padding-top:15px; padding-left:110px;  margin-bottom:-5px;">SWIPE THE PAGE!</h3>
+            <p style="padding-top:0px; padding-left:110px;">TO SEE THE NAVIGATION!</p>
+        </span>
+       
+        <span  style="top:400px; left:120px;" class="coach-arrow arrow16">
+        	<h3 style="margin-left:-50px; padding-top:15px;  margin-bottom:-5px;">TAP ANYWHERE TO CLOSE!</h3>
+            <p style="margin-left:-162px; padding-left:110px;">CLOSE THE COACH, TAP THE PAGE!</p>
+        </span>
+       
+    </div>    
+    <div class="landscape-coach">        
+        <span style="left:47%; top:15%;" class="coach-arrow arrow12">
+            <p style="text-align:center; padding-top:100px; margin-left:-160px;">
+            	This page has a lot of responsive features!<br>
+                That means they expand when the device is in landscape!<br>
+				Flip your device back in portrait mode to continue the tutorial!<br>      
+            </p>
+        </span>
+    </div>
+</div>
+
+
+
+<div class="all-elements">
+    
+    <div id="sidebar" class="page-sidebar">
+        <div class="page-sidebar-scroll">
+        	<a href="#" class="nav-icon nav-coach coach-icon">COACH</a>
+			<a href="index.html" class="nav-icon home-icon-selected">HOME</a>
+            <a href="type.html" class="nav-icon type-icon">TYPE</a>
+            <a href="jquery.html" class="nav-icon jquery-icon">jQUERY</a>
+            <a href="others.html" class="nav-icon other-icon">OTHER</a>
+            <a href="gallery.html" class="nav-icon gallery-icon">GALLERY</a>
+            <a href="folio.html" class="nav-icon folio-icon">FOLIO</a>
+            <a href="blog.html" class="nav-icon blog-icon">BLOG</a>
+            <a href="mail.html" class="nav-icon contact-icon">MAIL</a>
+            <a href="tel:+1 234 567 890" class="nav-icon call-icon">CALL</a>
+            <a href="sms:+1 234 567 890" class="nav-icon text-icon">SMS</a>
+        </div>
+    </div>
+       
+    <div id="content" class="page-content">
+    	<div class="page-header">
+    		<em class="deploy-sidebar"></em>
+        	<img class="logo" src="images/misc/logo.png" alt="img" width="85">
+   		</div>
+        
+        <div class="decoration"></div>
+        
+       
+        <div class="bxslider-wrapper" data-snap-ignore="true">
+            <div class="bxslider">
+                <div>
+                    <img src="images/slider/0.jpg" alt="img"/>
+                    <blockquote class="slider-caption">
+                        <p class="slider-title">
+                            THE ONLY FLAT<br>MOBILE PAGE
+                        </p>
+                    </blockquote>
+                </div>
+                <div>
+                    <img src="images/slider/1.jpg" alt="img"/>
+                    <blockquote class="slider-caption">
+                        <p class="slider-title">
+                            SIMPLE, CLEAN<br>AND PROPORTIONATE
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+		</div>
+        
+        <div class="decoration"></div>
+        
+        <div class="container no-bottom">
+        	<h1 class="center-text">Welcome!</h1>
+        	<p>Ciento brings the design and feel of iOS7 and flat flat interfaces to your device! Awesomely fast, made using our Epsilon framework, it’s gorgeous!</p>
+        </div>
+        
+        <div class="decoration"></div>
+        
+        <div class="column shadow">
+            <div class="one-half">
+                <img class="center-icon" src="images/icons-large/icon2%402x.png" alt="img">
+                <h4 class="center-text uppercase">Large <br>compatibilty</h4>
+                <p class="center-text no-bottom">
+                    Lorem ipsum dolor sit, consectetur adipisci. <br>
+                </p> 
+            </div>
+            <div class="one-half">
+                <img class="center-icon" src="images/icons-large/icon1%402x.png" alt="img">
+                <h4 class="center-text uppercase">Very <br> friendly</h4>
+                <p class="center-text no-bottom">
+                    Lorem ipsum dolor sit, consectetur adipisci. <br>
+                </p> 
+            </div>
+        </div>
+        <div class="column shadow">
+            <div class="one-half">
+                <img class="center-icon" src="images/icons-large/icon3%402x.png" alt="img">
+                <h4 class="center-text uppercase">Thoroughly documented!</h4>
+                <p class="center-text no-bottom">
+                    Lorem ipsum dolor sit, consectetur adipisci. <br>
+                </p> 
+            </div>
+            <div class="one-half">
+                <img class="center-icon" src="images/icons-large/icon4%402x.png" alt="img">
+                <h4 class="center-text uppercase">Built from experience</h4>
+                <p class="center-text no-bottom">
+                    Lorem ipsum dolor sit, consectetur adipisci. <br>
+                </p> 
+            </div>  
+        </div>      
+        
+        <div class="decoration"></div>
+        
+        <div class="container no-bottom">
+        	<h1 class="center-text">Want some more features?</h1>
+            <p class="center-text">We have tons of features for you, check the navigation bellow or tap the button to see more!</p>
+            <a class="flat-button flat-settings center-button" href="#">More Services</a>
+        </div>
+        
+        <div class="decoration"></div>
+
+		<div class="container">
+            <ul class="gallery gallery-homepage">
+                <li>
+                    <a class="swipebox" href="images/gallery/full/1.jpg" title="An awesome gallery!">
+                        <img src="images/slider/0s.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/2.jpg" title="An awesome gallery!">
+                        <img src="images/slider/1s.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/3.jpg" title="An awesome gallery!">
+                        <img src="images/slider/2s.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/4.jpg" title="An awesome gallery!">
+                        <img src="images/slider/3s.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/5.jpg" title="An awesome gallery!">
+                        <img src="images/slider/4s.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/2.jpg" title="An awesome gallery!">
+                        <img src="images/slider/3s.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/1.jpg" title="An awesome gallery!">
+                        <img src="images/slider/0s.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/2.jpg" title="An awesome gallery!">
+                        <img src="images/slider/1s.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/3.jpg" title="An awesome gallery!">
+                        <img src="images/slider/2s.jpg" alt="Image 001" />
+                    </a>
+                </li>
+            </ul> 
+        </div>  
+        
+        <div class="decoration"></div>
+        
+        <div class="container no-bottom">
+        	<h1 class="center-text">More portfolio items!</h1>
+            <p class="center-text">We have tons of features for you, check the navigation bellow or tap the button to see more!</p>
+            <a class="flat-button flat-gallery center-button" href="#">More Items</a>
+        </div>     
+        
+        <div class="decoration"></div>
+        
+		<div class="container">
+            <div class="contact-form no-bottom"> 
+            <div class="container no-bottom">
+                <h1 class="center-text">Subscribe to newsletter!</h1>
+                <p class="center-text">Subscribe to our newsletter, we never spam or stress you out!</p>
+            </div>   
+                <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                    <div class="notification-box green-box">
+                        <h4>MESSAGE SENT!</h4>
+                        <a href="#" class="close-notification">x</a>
+                        <div class="clear"></div>
+                        <p>
+                            You're message has been successfully sent. Please allow up to 48 hours for us to reply!  
+                        </p>  
+                    </div> 
+                </div>
+            
+                <form action="http://paultrifa.com/envato/themeforest/aufidius/php/contact.php" method="post" class="contactForm" id="contactForm">
+                    <fieldset>             
+                        <div class="formValidationError" id="contactEmailFieldError">
+                            <div class="small-notification red-notification no-bottom">
+                                <p>EMAIL IS REQUIRED</p>
+                            </div>
+                            <div class="subscribe-clear"></div>
+                        </div> 
+                        <div class="formValidationError" id="contactEmailFieldError2">
+                            <div class="small-notification red-notification no-bottom">
+                                <p>ADDRESS MUST BE VALID</p>
+                            </div>
+                            <div class="subscribe-clear"></div>
+                        </div>    
+                        <div class="formFieldWrap">
+                            <input type="text" name="contactNameField" value="Subscription Form" class="subscribe-hide contactField requiredField" id="contactNameField"/>
+                        </div>
+                        <div class="formFieldWrap">
+                            <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
+                        </div>
+                        <div class="formTextareaWrap">
+                        	<div class="subscribe-form">
+                            	<textarea name="contactMessageTextarea" class="subscribe-hide contactTextarea requiredField" id="contactMessageTextarea">User Requesting Subscription</textarea>
+                        	</div>
+                        </div>
+                        <div class="formSubmitButtonErrorsWrap">
+                            <div class="subscribe-button">
+                            	<input type="submit" class="buttonWrap flat-button flat-settings center-button contactSubmitButton" id="contactSubmitButton" value="SUBSCRIBE" data-formId="contactForm"/>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>       
+            </div>
+        </div>
+        <div class="decoration"></div>   
+        
+    
+    <div class="container">
+    	<div class="footer-socials">
+            <a href="#" class="footer-facebook"></a>
+            <a href="#" class="footer-up"></a>
+            <a href="#" class="footer-twitter"></a>
+        </div>
+    	<p class="center-text">Copyright 2013. All rights reserved.</p>
+        <p class="center-text">Wetaxi Developed by Reignsoft</p>
+    </div>
+               
+	</div>   
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
