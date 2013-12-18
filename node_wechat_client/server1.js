@@ -132,13 +132,19 @@ io.sockets.on('connection', function(socket) {
 
 var updateClientStatus = function(data) {
   // sending new data to all the sockets connected
-  console.log(data.bookedDetails);
- /* connectionsArray.forEach(function(tmpSocket) {
+ /* console.log(data.bookedDetails.length);
+  console.log(data.bookedDetails[0].engaged_did);*/
+ // connectionsArray.forEach(function(tmpSocket) {
 	//io.sockets.socket(clients[1]).emit("greeting", "Hey there, User 2");
-	console.log(data.bookedDetails.engaged_did[0]);
+//	console.log(data.bookedDetails[0].engaged_did);
 	//io.sockets.socket(data.bookedDetails.socket_session_id).emit("booking", data.bookedDetails.engaged_did);
     //tmpSocket.volatile.emit('notification', data);
-  });*/
+  //});
+	for (var i=0;i<data.bookedDetails.length;i++)
+	{ 
+		//console.log();
+		io.sockets.socket(data.bookedDetails[i].socket_session_id).emit('booking', data.bookedDetails[i].engaged_did);
+	}
 };
 
 var updateSockets = function(data) {
