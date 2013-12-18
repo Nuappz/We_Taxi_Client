@@ -153,6 +153,7 @@
 <script type="text/javascript" language="javascript">
 
 function FormSubmit() {
+	//e.preventDefault();
 	var items = Array();
 	$(".loader").show();
 	$(":submit").attr("disabled", true);
@@ -198,14 +199,16 @@ function FormSubmit() {
 	});	
 	
 	socket.on('booking', function (data) {
-		var usersList = "<dl>";
+	/*	var usersList = "<dl>";
 		$.each(data.bookedDetails,function(index,engaged){
-			usersList += "<dt>" + engaged.driver_id + "</dt>\n";
+			usersList += "<dt>" + engaged.engaged_did + "</dt>\n";
 		});
-		usersList += "</dl>";
+		usersList += "</dl>";*/
 		var element = document.getElementById('msgtoshow');
 		element.parentNode.removeChild(element);
-		$('#msgtoshow').html(usersList).show();
+	//	$('#msgtoshow').html(usersList).show();
+		//alert("Success");
+		socket.disconnect();
 	});
         /*  $.post( 
              "lib/save_order.inc.php",
